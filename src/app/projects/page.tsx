@@ -14,7 +14,7 @@ async function fetchProjects(){
 export default async function ProjectsPage(){
    const data =await fetchProjects()
 
-   const repos=data?.map(repo=>{
+   const repos=data?.map((repo:any)=>{
     return {
         id:repo.id,
         name:repo.name,
