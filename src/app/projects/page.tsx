@@ -13,27 +13,51 @@ async function fetchProjects(){
 
 export default async function ProjectsPage(){
    const data =await fetchProjects()
-
    const repos=data?.map((repo:any)=>{
     return {
         id:repo.id,
         name:repo.name,
-        rating:3.25,
+        link:repo.html_url,
+        description:repo.description,
+        language: repo?.language,
+        created_at:repo.created_at,
+        fork: repo.fork,
+        stars:repo.stargazers_count,
         starRating:3,
-        year:2020,
-        genre:"Romance",
-        runtime:"1h:56m",
-        cast:"Emilia Clarke"
+        year:new Date(repo.created_at).getFullYear(),
     }
-
    })
    
     return(
-        <div className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
         <Projects repos={repos}/>
     </div>
     )
 
 }
-
+/*
  
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+    }
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+*/
