@@ -1,0 +1,81 @@
+{
+    "learning":[
+        {
+            "link":"https://go.dev/doc/tutorial/getting-started",
+            "logo_url":"https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Fuchsia.svg",
+            "name":"Go"
+        },
+        {
+            "link":"https://go.dev/doc/tutorial/getting-started",
+            "logo_url":"https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png",
+            "name":"Docker"
+        },
+        {
+            "link":"https://www.rabbitmq.com/getstarted.html",
+            "logo_url":"https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-ar21.svg",
+            "name":"Rabbitmq"
+        }
+    ],
+    "about_me":{
+        "resume":"",
+        "main_technologies":{
+            "programe_language":[
+                {
+                    "name":"Typescript",
+                    "link": "https://www.typescriptlang.org/",
+                    "url_log":"https://www.typescriptlang.org/images/branding/logo-grouping.svg"
+                },
+                {
+                    "name":"JavaScript",
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                    "url_log":"https://freesvg.org/img/js_logo.png"
+                },
+                {
+                    "name":"Python",
+                    "link": "https://www.python.org/",
+                    "url_log":"https://www.python.org/static/img/python-logo@2x.png"
+                }    
+            ],
+            "libs_and_framworks":[
+            
+            {
+                "name":"React Native",
+                "link": "https://reactnative.dev/",
+                "url_log":"https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg"
+            },
+            {
+                "name":"Expo",
+                "link": "https://docs.expo.dev/",
+                "url_log":"../../assets/logo-wordmark.svg"
+            },
+            {
+                "name":"Nodejs",
+                "link": "https://nodejs.org/en/about",
+                "url_log":"https://nodejs.org/static/images/logo.svg"
+            },
+            {
+                "name":"React",
+                "link": "https://react.dev/",
+                "url_log":"https://cdn.worldvectorlogo.com/logos/react-2.svg"
+            },
+            
+            {
+                "name":"Django",
+                "link": "https://www.djangoproject.com/foundation/",
+                "url_log":"https://www.djangoproject.com/m/img/logos/django-logo-negative.svg"
+            },
+           
+            {
+                "name":"Nextjs",
+                "link": "https://nextjs.org/",
+                "url_log":"https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png"
+            },
+            {
+                "name":"Tailwindcss",
+                "link": "https://tailwindcss.com/",
+                "url_log":"https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+            }    
+        ]
+    }
+    }
+}
