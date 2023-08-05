@@ -1,5 +1,5 @@
 export default function ListItem({ repo }:{repo:any}) {
-    //<Imag src={repo.image} alt="" width="60" height="88" className="flex-none rounded-md bg-slate-100"  border-red-500 />
+   
     return (
       <article className="flex items-start space-x-8 p-6 mt-5 border-solid border-2 rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
         
