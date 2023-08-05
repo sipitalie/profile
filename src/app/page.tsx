@@ -4,60 +4,49 @@ import dataStaticJson from "./list.json"
 import { Stack } from "./components/stacks"
 export default function Home() {
   const data =dataStaticJson
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="mb-28 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
-      <div 
-       className="group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20"
-      >
-          <Link href={'/posts'}><h2 className={`text-2xl font-semibold  text-white`}>
-            Posts{' '}
-          </h2>
-          </Link>
-          </div>
-          
+  //Oi, eu sou o Michel
 
-        <div
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20"
-        
-        >
-           <Link href={'/projects'}>
-            <h2 className={`text-2xl font-semibold  text-white`}>
-            Projects{' '}
-          </h2>
-          </Link>
-        </div>
-      </div>
-      <div className="flex mt-8 ml-5 mr-5 ">
-      <div className="flex w-60  mx-5 bg-white">
-        <ul>
+//Sou um desenvolvedor Frontend autodidata com mais de 1 ano e meio de experiência profissional em design e desenvolvimento de interfaces, teste de recursos e push de código. Proficiente no uso de uma ampla variedade de ferramentas para agregar valor e aprimorar a experiência do usuário.
+  
+  return (
+    <div className="flex flex-col w-screen items-center justify-between p-24">
+      <div className="flex flex-col   items-center justify-between">
+          <ul className="flex flex-col items-center justify-between">
+          <div className="flex">
+            <h1 className="text-white text-center text-[1rem] font-bold">Linguagem de programação</h1>
+          </div>
+          <div className={`grid grid-cols-3 gap-5 px-32 py-12`}>
           {
+            data.about_me.main_technologies.programe_language.map((pgLanguage)=>{
+             
+              return (
+              <Stack.Root key={pgLanguage.name}>
+                <Stack.Logo name={pgLanguage.name} image_link={pgLanguage.url_log}/>
+                <Stack.Description text={pgLanguage.name} />
+              </Stack.Root>)
+            })
+
+          }</div>
+        </ul>
+        <ul className="flex flex-col items-center justify-between">
+        <div className="flex">
+            <h1 className="text-white text-center text-[1rem] font-bold">Bibliotecas e frameworks</h1>
+          </div>
+        <div className={`grid grid-cols-3 gap-5 px-32 py-12`}> 
+       {
             data.about_me.main_technologies.libs_and_framworks.map((pgLanguage)=>{
               return (
               <Stack.Root key={pgLanguage.name}>
-                <Stack.Logo image_link={pgLanguage.url_log}/>
+                <Stack.Logo name={pgLanguage.name} image_link={pgLanguage.url_log}/>
                 <Stack.Description text={pgLanguage.name} />
               </Stack.Root>)
             })
 
           }
-        </ul>
+           </div>
+          </ul>
+     </div>
       </div>
-      <div>
-        <ul>
-          {
-            data.about_me.main_technologies.programe_language.map((pgLanguage)=>{
-              return (
-              <Stack.Root key={pgLanguage.name}>
-                <Stack.Logo image_link={pgLanguage.url_log}/>
-                <Stack.Description text={pgLanguage.name} />
-              </Stack.Root>)
-            })
-
-          }
-        </ul>
-      </div>
-      </div>
-    </main>
+   
   )
 }
