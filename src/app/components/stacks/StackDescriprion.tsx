@@ -3,5 +3,8 @@ interface StackDescriptionProps{
 }
 
 export function StackDescription({text}:StackDescriptionProps){
-    return <p className="text-white">{text}</p>
+    return( 
+        <span >
+            <strong className="text-white">{text}</strong>
+        </span>)
 }
