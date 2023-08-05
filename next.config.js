@@ -8,6 +8,7 @@ const nextConfig = {
             "typescriptlang.org",
             "freesvg.org",
             "python.org",
+            "www.python.org",
             "cloudfront.net",
             "nodejs.org",
             "worldvectorlogo.com",
