@@ -15,13 +15,13 @@ export default function Home() {
         <ul className="flex flex-row py-5 items-center" >
 
           <li className="flex items-start space-x-8 p-2 mt-2 mx-2 border rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
-            <Link href={'/projects'}>
+            <Link href={'/posts'}>
             <span className={`text-white text-lg font-bold`}>Postagens</span>
             </Link>
 
             </li>
           <li className="flex items-start space-x-8 p-2 mt-2 mx-2 border rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
-            <Link href={'/posts'}>
+            <Link href={'/projects'}>
               <span className={`text-white text-lg font-bold`}>Projectos</span>
               </Link>
             </li>
