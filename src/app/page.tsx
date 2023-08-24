@@ -9,13 +9,22 @@ export default function Home() {
 //Sou um desenvolvedor Frontend autodidata com mais de 1 ano e meio de experiência profissional em design e desenvolvimento de interfaces, teste de recursos e push de código. Proficiente no uso de uma ampla variedade de ferramentas para agregar valor e aprimorar a experiência do usuário.
   
   return (
-    <div className="flex flex-col w-screen items-center justify-between p-24">
-      <div className="flex flex-col   items-center justify-between">
-          <ul className="flex flex-col items-center justify-between">
+    <>
+    <div className="flex flex-col w-screen items-center justify-between pt-24">
+
+      <nav className="flex sm:hidden items-center">
+        <ul className="flex flex-row py-5 items-center" >
+          <li><Link href={'/projects'}>Projectos</Link></li>
+          <li><Link href={'/posts'}>Postagens</Link></li>
+        </ul>
+      </nav>
+      <section className="flex flex-col w-full h-full items-center py-4">
+      </section>
+      <section className="flex flex-col items-center justify-between">
           <div className="flex">
             <h1 className="text-white text-center text-[1rem] font-bold">Linguagem de programação</h1>
           </div>
-          <div className={`grid grid-cols-3 gap-5 px-32 py-12`}>
+          <ul className={`grid  gap-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4  items-center sm:px-[2rem]  md:px-0 py-12`}>
           {
             data.about_me.main_technologies.programe_language.map((pgLanguage)=>{
              
@@ -26,13 +35,13 @@ export default function Home() {
               </Stack.Root>)
             })
 
-          }</div>
-        </ul>
-        <ul className="flex flex-col items-center justify-between">
+          }</ul>
+        </section>
+        <section className="flex flex-col w-full items-center justify-between py-4">
         <div className="flex">
             <h1 className="text-white text-center text-[1rem] font-bold">Bibliotecas e frameworks</h1>
           </div>
-        <div className={`grid grid-cols-3 gap-5 px-32 py-12`}> 
+        <ul className={`grid  gap-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4  items-center sm:px-[2rem]  md:px-0 py-12`}> 
        {
             data.about_me.main_technologies.libs_and_framworks.map((pgLanguage)=>{
               return (
@@ -43,10 +52,11 @@ export default function Home() {
             })
 
           }
-           </div>
-          </ul>
-     </div>
+           </ul>
+      </section>
       </div>
+     
+      </>
    
   )
 }
