@@ -10,12 +10,21 @@ export default function Home() {
   
   return (
     <>
-    <div className="flex flex-col w-screen items-center justify-between pt-24">
-
+    <div className="flex flex-col w-screen items-center justify-between pt-12 md:pt-24 ">
       <nav className="flex sm:hidden items-center">
         <ul className="flex flex-row py-5 items-center" >
-          <li><Link href={'/projects'}>Projectos</Link></li>
-          <li><Link href={'/posts'}>Postagens</Link></li>
+
+          <li className="flex items-start space-x-8 p-2 mt-2 mx-2 border rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
+            <Link href={'/projects'}>
+            <span className={`text-white text-lg font-bold`}>Postagens</span>
+            </Link>
+
+            </li>
+          <li className="flex items-start space-x-8 p-2 mt-2 mx-2 border rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
+            <Link href={'/posts'}>
+              <span className={`text-white text-lg font-bold`}>Projectos</span>
+              </Link>
+            </li>
         </ul>
       </nav>
       <section className="flex flex-col w-full h-full items-center py-4">
