@@ -7,7 +7,7 @@ export function Icon({name,color}:{name:IconName, color:string}){
             return <FaLinkedin size={32} color={color} />
         case "Instagram":
             return <AiFillInstagram size={32} color={color}/>
-        case "Portfolio":
+        case "Portfólio":
             return <FaUserCircle size={32} color={color}/>
         case "Youtube":
             return < AiFillYoutube size={32} color={color}/>
