@@ -2,6 +2,9 @@
 import Link from "next/link"
 import dataStaticJson from "./list.json"
 import { Stack } from "./components/stacks"
+import Nav from "./components/nav"
+import NavItem from "./components/navItem"
+import FooterLinksNav from "./components/naviFooterLinks"
 export default function Home() {
   const data =dataStaticJson
   //Oi, eu sou o Michel
@@ -10,10 +13,13 @@ export default function Home() {
   
   return (
     <>
+    <Nav>
+        <NavItem href={'/posts'} isActive><span className={`text-white text-lg font-bold`}>Postagens</span></NavItem>
+        <NavItem href={'/projects'} isActive><span className={`text-white text-lg font-bold`}>Projectos</span></NavItem>
+    </Nav>
     <div className="flex flex-col w-screen items-center justify-between pt-12 md:pt-24 ">
       <nav className="flex sm:hidden items-center">
         <ul className="flex flex-row py-5 items-center" >
-
           <li className="flex items-start space-x-8 p-2 mt-2 mx-2 border rounded-xl border-gray-600 transition-colors hover:border-red-700 hover:bg-gray-700 hover:bg-opacity-20">
             <Link href={'/posts'}>
             <span className={`text-white text-lg font-bold`}>Postagens</span>
@@ -28,6 +34,11 @@ export default function Home() {
         </ul>
       </nav>
       <section className="flex flex-col w-full h-full items-center py-4">
+        <div className="flex w-2/4 h-46 items-center py-4">
+          <p  className="text-white  text-[1.2rem]">
+            Oi, eu sou o <strong className="text-red-700">Estevão.</strong> {data.about_me.resume_pt}
+          </p>
+          </div>
       </section>
       <section className="flex flex-col items-center justify-between">
           <div className="flex">
@@ -64,7 +75,7 @@ export default function Home() {
            </ul>
       </section>
       </div>
-     
+      <FooterLinksNav/>
       </>
    
   )

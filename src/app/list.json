@@ -17,7 +17,8 @@
         }
     ],
     "about_me":{
-        "resume":"",
+        "resume_en":"Developer at cacimbo lda, I started developing in college in 2016 in c ++, but it was in 2019 when I started programming in Python that I fell in love with programming.",
+        "resume_pt":"Desenvolvedor Full stack com mais de 3 anos de experiência profissional,  meu primeiro contacto com desenvolvimento foi na faculdade em 2016 em c++, mas foi em 2019 quando comecei a programar em Python que me apaixonei por programação.",
         "main_technologies":{
             "programe_language":[
                 {

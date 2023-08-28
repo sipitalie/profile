@@ -19,10 +19,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-zinc-950`}>
       
       <main className="flex flex-col   bg-zinc-950 h-screen w-full">
-       <Nav>
-        <NavItem href={'/posts'} isActive><span className={`text-white text-lg font-bold`}>Postagens</span></NavItem>
-        <NavItem href={'/projects'} isActive><span className={`text-white text-lg font-bold`}>Projectos</span></NavItem>
-       </Nav>
         {children}
       </main>
       </body>

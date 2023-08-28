@@ -1,4 +1,7 @@
 import Projects from "../components";
+import Nav from "../components/nav";
+import NavItem from "../components/navItem";
+import FooterLinksNav from "../components/naviFooterLinks";
 const revaledate= 3600*18
 async function fetchProjects(){
     const base_url='https://api.github.com/users/sipitalie/repos'
@@ -29,9 +32,16 @@ export default async function ProjectsPage(){
    })
    
     return(
+        <>
+         <Nav>
+        <NavItem href={'/posts'} isActive><span className={`text-white text-lg font-bold`}>Postagens</span></NavItem>
+        <NavItem href={'/projects'} isActive><span className={`text-white text-lg font-bold`}>Projectos</span></NavItem>
+        </Nav>
         <div className="flex flex-col items-center justify-between p-24 bg-zinc-950">
         <Projects repos={repos}/>
     </div>
+    <FooterLinksNav/>
+    </>
     )
 
 }
