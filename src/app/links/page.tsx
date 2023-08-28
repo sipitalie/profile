@@ -15,7 +15,7 @@ const links=[
         link:"https://www.youtube.com/@estevaosipitali"
     },
     {
-        name:"Portfolio",
+        name:"Portfólio",
         link:"https://www.sipitaie.com/"
     },
     {
