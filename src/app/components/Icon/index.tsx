@@ -1,6 +1,6 @@
 import {FaLinkedin,FaUserCircle} from "../react-icons/fa"
 import {AiFillInstagram,AiFillYoutube}from "../react-icons/ai"
-export type IconName="LinkedIn"|"Portfolio"|"Instagram"|"Youtube"
+export type IconName="LinkedIn"|"Portfólio"|"Instagram"|"Youtube"
 export function Icon({name,color}:{name:IconName, color:string}){
     switch (name) {
         case "LinkedIn":
