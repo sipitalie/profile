@@ -1,15 +1,7 @@
 {
     "learning":[
-        {
-            "link":"https://go.dev/doc/tutorial/getting-started",
-            "logo_url":"https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Fuchsia.svg",
-            "name":"Go"
-        },
-        {
-            "link":"https://go.dev/doc/tutorial/getting-started",
-            "logo_url":"https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png",
-            "name":"Docker"
-        },
+        
+        
         {
             "link":"https://www.rabbitmq.com/getstarted.html",
             "logo_url":"https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-ar21.svg",
@@ -26,6 +18,11 @@
                     "link": "https://www.typescriptlang.org/",
                     "url_log":"https://www.typescriptlang.org/images/branding/logo-grouping.svg"
                 },
+                {
+            "link":"https://go.dev/doc/tutorial/getting-started",
+            "url_log":"https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Fuchsia.svg",
+            "name":"Go"
+        },
                 {
                     "name":"JavaScript",
                     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -65,6 +62,11 @@
                 "link": "https://www.djangoproject.com/foundation/",
                 "url_log":"https://www.djangoproject.com/m/img/logos/django-logo-negative.svg"
             },
+                {
+            "link":"https://go.dev/doc/tutorial/getting-started",
+            "logo_url":"https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png",
+            "name":"Docker"
+        },
            
             {
                 "name":"Nextjs",
