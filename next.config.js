@@ -6,6 +6,7 @@ const nextConfig = {
             "go.dev",
             "vectorlogo.zone",
             "typescriptlang.org",
+            "www.docker.com",
             "freesvg.org",
             "python.org",
             "www.python.org",
