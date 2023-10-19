@@ -42,7 +42,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center justify-between">
           <div className="flex">
-            <h1 className="text-white text-center text-[1rem] font-bold">Linguagem de programação</h1>
+            <h1 className="text-white text-center text-[1rem] font-bold">Linguagens de programação</h1>
           </div>
           <ul className={`grid  gap-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4  items-center sm:px-[2rem]  md:px-0 py-12`}>
           {
